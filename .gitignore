@@ -1,3 +1,5 @@
 venv/
 *.pyc
 *.png
+.ipynb_checkpoints/
+.spyproject/
