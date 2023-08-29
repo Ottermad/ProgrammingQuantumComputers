@@ -3,3 +3,4 @@ venv/
 *.png
 .ipynb_checkpoints/
 .spyproject/
+.idea

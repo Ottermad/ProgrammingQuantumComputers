@@ -15,13 +15,13 @@ circuit.x(register)
 circuit.cx(register[-1], scratch)
 for n in range(0, register.size):
     circuit.cx(scratch, register[n])
-    
+
+
 def controlled_increment_register(circuit, register, control_bit):
     for i in range(0, len(register))[::-1]:
         gate = XGate().control(i+1)
 
         circuit.append(gate, [control_bit] + register[:i] + [register[i]], [])
-
 
 
 controlled_increment_register(circuit, register, scratch[0])
