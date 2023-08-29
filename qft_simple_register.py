@@ -1,8 +1,7 @@
-"""Use QFT to distinguish between signals."""
-from math import pi
+"""Get QFT of a simple register"""
 import math
-from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister, transpile
-from qiskit.circuit.library import QFT, CU1Gate
+from qiskit import QuantumCircuit, QuantumRegister, transpile
+from qiskit.circuit.library import QFT
 from qiskit_aer import AerSimulator
 
 register = QuantumRegister(4)
